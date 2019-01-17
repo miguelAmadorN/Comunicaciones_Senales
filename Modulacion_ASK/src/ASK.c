@@ -76,13 +76,13 @@ int main(int argc, char *argv[]){
 	{
 		Cabecera CW;
 		fread(&CW, 44, 1, archivoWavEntrada);
-		short *segmento      = malloc(sizeof(short) * 32);
-		int numMuestrasAudio = getNumberAudioSamples(CW);
-		unsigned int numTotal=numMuestrasAudio/32;
+		short *segmento       = malloc(sizeof(short) * 32);
+		int numMuestrasAudio  = getNumberAudioSamples(CW);
+		unsigned int numTotal = numMuestrasAudio / 32;
 		//DFT
-		for(char i=0;i<numTotal;i++){
-			fread(segmento,64,1,archivoWavEntrada);
-			DFT(segmento,32);
+		for(char i = 0; i < numTotal; i++){
+			fread(segmento, 64, 1, archivoWavEntrada);
+			DFT(segmento, 32);
 		}
 			
 		fclose(archivoWavEntrada);
