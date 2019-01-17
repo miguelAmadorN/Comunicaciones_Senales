@@ -7,6 +7,6 @@ N log N a diferencia de la DFT que es cuadratica.
 **Ejecutar**
 ./FFT [nombre wav entrada] [nombre wav salida]
 
-![wav entrada](../Fast_Fourier_Transform/Imagen1.png)
+![wav entrada](../FFT/Imagen1.png)
 
-![wav salida](../Fast_Fourier_Transform/Imagen2.png)
+![wav salida](../FFT/Imagen2.png)
