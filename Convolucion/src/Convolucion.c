@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		/*
 		*	Calculamos las muestras para el h(n)
 		*/
-		for(int i=0;i<numMuestras;i++)h[i]=exp(-i*Constante);
+		for(int i=0;i<numMuestras;i++)h[i] = exp(-i * Constante);
 
 
 		archivoWavSalida=fopen(argv[2],"w");
