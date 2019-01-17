@@ -21,6 +21,8 @@ typedef struct CabeceraWAV
 	unsigned char Subchunk2_ID[4];
 	unsigned int Subchunk2_Size;
 }Cabecera;
+//Regresa el numero muestras por segundo
+unsigned int getSampleRate(Cabecera CW);
 
 //Imprime la informacion del audio
 void informacionAudio(Cabecera cabeceraAudio);

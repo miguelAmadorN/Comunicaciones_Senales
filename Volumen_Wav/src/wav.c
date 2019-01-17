@@ -45,6 +45,11 @@ void informacionAudio(Cabecera cabeceraAudio)
 	printf("Tam total del archivo: %d\n", cabeceraAudio.ChunkSize + 8);	
 }
 
+//Regresa el numero muestras por segundo
+unsigned int getSampleRate(Cabecera CW){
+	return CW.SampleRate;
+}
+
 //Regresa el tamaño completo del archivo en bytes
 unsigned int getFileSize(Cabecera CW)
 {
@@ -75,7 +80,7 @@ unsigned int getTotalNumberSamples(Cabecera CW)
 	return CW.Subchunk2_Size / (CW.BitsPerSample / 8);
 }
 
-//Agrega una cantidad de muestras a la cabecera sin importar si es mono o estereo
+//Agrega una cantidad de muestras a ka cabecera sin importar si es audio o estereo
 Cabecera addNumberAudioSamples(Cabecera CW, int numberSamples)
 {
 	CW.Subchunk2_Size += (numberSamples * 2 * CW.NumChannels[0]);

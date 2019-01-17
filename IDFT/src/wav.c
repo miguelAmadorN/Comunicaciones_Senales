@@ -45,6 +45,11 @@ void informacionAudio(Cabecera cabeceraAudio)
 	printf("Tam total del archivo: %d\n", cabeceraAudio.ChunkSize + 8);	
 }
 
+//Regresa el numero muestras por segundo
+unsigned int getSampleRate(Cabecera CW){
+	return CW.SampleRate;
+}
+
 //Regresa el tamaño completo del archivo en bytes
 unsigned int getFileSize(Cabecera CW)
 {
