@@ -1,4 +1,4 @@
-#Transformada de Fourier Discreta (DFT)
+# Transformada de Fourier Discreta (DFT)
 
 La Transformada de Fourier Discreta permite pasar un señal del tiempo 
 a la frecuencia.

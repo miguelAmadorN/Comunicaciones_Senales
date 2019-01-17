@@ -1,6 +1,11 @@
+# Simulación de Circuito RC
+
 Filtro pasa bajas simulando un circuito RC usando la convolución.
 
-Ejecución:
+**Ejecutar**
+./Convolucion [nombre wav entrada] [nombre wav salida] [num muestras]
+
+Ejemplo Ejecución:
 
 ![Muestra 1](../Convolucion/m1.png)
 
