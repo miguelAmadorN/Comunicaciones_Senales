@@ -13,7 +13,7 @@ Proceso:
 
 4.- Aplicar la IDFT al producto de las señales en frecuencia.  
 
-**Ejecucion con script**
+**Ejecutar con script**
 ./scriptXX.sh
 
 **Caracteristicas**
