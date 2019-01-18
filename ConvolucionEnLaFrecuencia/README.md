@@ -1,4 +1,4 @@
-# Simulación de Circuito RC
+# Simulación de Circuito RC (En Frecuencia)
 
 Filtro pasa bajas simulando un circuito RC, multiplicando las señales en la
 frecuencia, lo que es equivalente a hacer la convolución en el tiempo.
