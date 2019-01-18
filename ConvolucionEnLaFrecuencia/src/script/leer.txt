@@ -1,0 +1,11 @@
+la señal usada fue:
+	cos(2*pi*t*(exp(log(20)+n/ N ∗ 6.6)))
+
+con un tamaño de .010 segundos a 44100 muestras por segundo.
+
+
+Se hace la transformada de fourier al coseno y a la respuesta al impulso
+Se multiplica
+Se hace la transformada inversa de fourier y es como ver hecho la convolucion en el tiempo 
+
+
