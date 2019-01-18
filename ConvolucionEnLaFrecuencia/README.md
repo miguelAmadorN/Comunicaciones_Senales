@@ -29,8 +29,11 @@ IDFT con la fórmula (aplicando aquí el promedio y no en la DFT)
 La multiplicación (con perdida de información, sin escalar al valor máximo)
 
 Respuesta al impulso h[i] (Se generó y se adaptó a un archivo wav manualmente): 
-	h[i] = e^(-i * (2 * PI * Fc)/Fs);
+
+	h[i] = e^(-i * (2 * PI * Fc)/Fs)
+
 Fc: Frecuencia de corte.
+
 Fs: Frecuencia de muestro.
 
 
