@@ -4,12 +4,10 @@ La Transformada de Fourier Discreta permite pasar un señal del tiempo
 a la frecuencia.
 
 Implementado con la fórmula:
+![Seno](../DFT/formula_dft.png)
 
-Let $ X_{k} = frac{1}{N}\sum_{n = 0}^{N - 1}X_{n} e^{ - frac{2PIi}{N} kn} K = 0, ... , N - 1 $
 
-Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
 
-"Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$"
 
 **Ejecutar**
 
