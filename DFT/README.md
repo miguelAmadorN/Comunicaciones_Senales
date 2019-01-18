@@ -7,6 +7,9 @@ Implementado con la fórmula:
 
 Let $ X_{k} = frac{1}{N}\sum_{n = 0}^{N - 1}X_{n} e^{ - frac{2PIi}{N} kn} K = 0, ... , N - 1 $
 
+Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
+
+"Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$"
 
 **Ejecutar**
 
