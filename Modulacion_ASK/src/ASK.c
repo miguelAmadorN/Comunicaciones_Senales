@@ -42,12 +42,12 @@ void DFT(short *muestrasAudio, int numMuestrasAudio)
 		for(int n = 0; n < numMuestrasAudio; n++)	
 			muestrasAudio1[k] += muestrasAudio[n] * cos(2 * PI * k * n / numMuestrasAudio);
 	
-		muestrasAudio1[k]/=numMuestrasAudio;
-		for(int n=0;n<numMuestrasAudio;n++)
-			muestrasAudio2[k]+=muestrasAudio[n]*sin(2*PI*k*n/numMuestrasAudio);
+		muestrasAudio1[k] /= numMuestrasAudio;
+		for(int n = 0; n < numMuestrasAudio; n++)
+			muestrasAudio2[k] += muestrasAudio[n] * sin(2 * PI * k * n / numMuestrasAudio);
 				
-		muestrasAudio2[k]/=numMuestrasAudio;
-		muestrasAudio2[k]*=-1;
+		muestrasAudio2[k] /= numMuestrasAudio;
+		muestrasAudio2[k] *= -1;
 	}
 
 	for(int i = 0; i < numMuestrasAudio; i++)
@@ -76,6 +76,7 @@ int main(int argc, char *argv[]){
 	{
 		Cabecera CW;
 		fread(&CW, 44, 1, archivoWavEntrada);
+		informacionAudio(CW);
 		short *segmento       = malloc(sizeof(short) * 32);
 		int numMuestrasAudio  = getNumberAudioSamples(CW);
 		unsigned int numTotal = numMuestrasAudio / 32;
