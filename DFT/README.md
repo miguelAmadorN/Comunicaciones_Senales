@@ -4,6 +4,7 @@ La Transformada de Fourier Discreta permite pasar un señal del tiempo
 a la frecuencia.
 
 Implementado con la fórmula:
+
 ![Seno](../DFT/formula_dft.png)
 
 
