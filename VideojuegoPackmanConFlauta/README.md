@@ -1,8 +1,8 @@
 # Videojuego controlado con flauta
 
-Este Videojuego hace uso de la biblioteca de ALSA para recivir audio y mediante la
-Transformada de Fourier Discreta pasamos la señal del dominio del tiempo a la frecuencia
-para detectar las notas musicales de la flauta, una vez detectadas se envia la información con sokets al servidor de scratch.
+Se hace uso de la biblioteca de ALSA para recivir audio y mediante la
+Transformada de Fourier Discreta pasa la señal del dominio del tiempo a la frecuencia
+para así detectar las notas musicales de la flauta, una vez detectadas se envia la información con sockets al servidor de scratch.
 
 **Servidor de Scratch**
 Abrir archivo flauta.sb en scratch.
@@ -15,9 +15,9 @@ gcc Flauta.c -o flauta.exe -lm -lasound
 
 **Controles**
 
-SI : Arriba
-SOL: Izuierda
-LA: Abajo
+SI : Arriba,
+SOL: Izuierda,
+LA: Abajo,
 FA: Derecha
 
 Ejemplo de ejecución:
